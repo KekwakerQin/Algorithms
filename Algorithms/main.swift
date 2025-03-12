@@ -1,11 +1,14 @@
-//
-//  main.swift
-//  Algorithms
-//
-//  Created by Qin Chingis on 3/12/25.
-//
-
 import Foundation
 
-print("Hello, World!")
+class User {
+    let name: String
+    init(name: String) {
+        self.name = name
+    }
+    
+    deinit {
+        print("user deinit")
+    }
+}
 
+var user1: User? = User(name: "alex")
