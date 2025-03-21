@@ -1,12 +1,13 @@
+import Foundation
 
-// Теперь основной код
-let holder = UnitHolder()              // holder.units = [Unit("a"), Unit("b"), Unit("c")]
-var units = holder.units               // Копия массива, но объекты те же
-var u = units.removeLast()             // Удаляем Unit("c"), сохраняем ссылку на него в u
-u.name = "d"                           // Меняем имя: теперь это Unit("d")
-units[0].name = "e"                    // Меняем имя первого элемента: теперь это Unit("e")
+math{ $0 - $1 }
+math(closure: -)
+math(closure: ) { $0 - $1 }
+math(closure: { $0 - $1 } )
+math() {$0 - $1}
 
-print("----")
-units.forEach { print($0.name) }       // Печатаем имена: e, b
-print("----")
-holder.units.forEach { print($0.name) } // Печатаем имена: e, b, d
+func math(closure: (Int,Int) -> Int ) -> Int {
+    let result = closure(5,2)
+    print(result)
+    return result
+}
