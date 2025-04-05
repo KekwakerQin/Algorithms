@@ -1,10 +1,10 @@
-class Box {
-    var label: String
-    init(label: String) {
-        self.label = label
-    }
-}
-
+//class Box {
+//    var label: String
+//    init(label: String) {
+//        self.label = label
+//    }
+//}
+//
 //var original: [Box] = [Box(label: "One"), Box(label: "Two")]
 //var copy = original
 //
