@@ -1,21 +1,23 @@
 import Foundation
 
-let a = [1,1,0,1,1,1,0,1]
-let b = LongestSubarray1493()
 
-let start1 = CFAbsoluteTimeGetCurrent()
-var Test1 = b.dpStyle(a)
-let end1 = CFAbsoluteTimeGetCurrent()
-print("DP-Style Time: \(end1 - start1)")
-
-
-let start2 = CFAbsoluteTimeGetCurrent()
-var Test2 = b.slidingWindow(a)
-let end2 = CFAbsoluteTimeGetCurrent()
-print("Sliding Window: \(end2 - start2)")
-
-
-
+var n = QuickSort([4,5,9,3,1])
+print(n)
+// MARK: NODES NEED TO LEARN
+//class Node {
+//    var value: Int
+//    var childrens: [Node]
+//    
+//    init(_ value: Int) {
+//        self.value = value
+//        self.childrens = []
+//    }
+//}
+//var a = Node(1)
+//var b = Node(2)
+//var c = Node(3)
+//a.childrens = [b,c]
+//print(a.childrens.value)
 
 // MARK: TESTS LAYOUTS
 //let start1 = CFAbsoluteTimeGetCurrent()

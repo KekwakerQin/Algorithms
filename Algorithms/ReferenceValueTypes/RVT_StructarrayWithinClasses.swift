@@ -1,13 +1,13 @@
-class Node {
-    var value: Int
-    init(_ value: Int) {
-        self.value = value
-    }
-}
-
-struct Graph {
-    var nodes: [Node]
-}
+//class Node {
+//    var value: Int
+//    init(_ value: Int) {
+//        self.value = value
+//    }
+//}
+//
+//struct Graph {
+//    var nodes: [Node]
+//}
 
 //let shared = Node(1)
 //var g1 = Graph(nodes: [shared])
