@@ -1,8 +1,30 @@
 import Foundation
+import RxSwift
 
+class Carr {
+    class Statistics {
+        var odometer = 0
+    }
+    
+    class didSetRun {
+        
+    }
+    // odometer(s) -> odometer(s1) = 20 -> odometer(s)
+    private(set) var statistics = Statistics() {
+        didSet {
+            print("didSet called")
+        }
+    }
 
-var n = QuickSort([4,5,9,3,1])
-print(n)
+    func refreshCar() {
+        statistics.odometer = 10 //
+        print("Changed odometer")
+    }
+}
+
+let car = Carr()
+car.refreshCar()
+
 // MARK: NODES NEED TO LEARN
 //class Node {
 //    var value: Int
