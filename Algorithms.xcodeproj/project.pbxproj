@@ -24,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		7D1DFABD2D811BB4001DC3E8 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DBBDD1B2DCB506E00E78CD0 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		7DBBDD1C2DCB50E600E78CD0 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		7DBBDD1E2DCB518B00E78CD0 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		7DBBDD1F2DCB51C600E78CD0 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		7DBBDD202DCB520200E78CD0 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -49,6 +54,7 @@
 		7D1DFAB42D811BB4001DC3E8 = {
 			isa = PBXGroup;
 			children = (
+				7DBBDD182DCB505000E78CD0 /* Knowledge  */,
 				7D1DFABF2D811BB4001DC3E8 /* Algorithms */,
 				7D1DFABE2D811BB4001DC3E8 /* Products */,
 			);
@@ -60,6 +66,34 @@
 				7D1DFABD2D811BB4001DC3E8 /* Algorithms */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7DBBDD182DCB505000E78CD0 /* Knowledge  */ = {
+			isa = PBXGroup;
+			children = (
+				7DBBDD192DCB505A00E78CD0 /* ArchPatterns */,
+			);
+			path = "Knowledge ";
+			sourceTree = "<group>";
+		};
+		7DBBDD192DCB505A00E78CD0 /* ArchPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				7DBBDD1A2DCB506700E78CD0 /* FiveOfPatterns */,
+			);
+			path = ArchPatterns;
+			sourceTree = "<group>";
+		};
+		7DBBDD1A2DCB506700E78CD0 /* FiveOfPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				7DBBDD202DCB520200E78CD0 /* Facade.swift */,
+				7DBBDD1F2DCB51C600E78CD0 /* Bridge.swift */,
+				7DBBDD1E2DCB518B00E78CD0 /* Adapter.swift */,
+				7DBBDD1C2DCB50E600E78CD0 /* Decorator.swift */,
+				7DBBDD1B2DCB506E00E78CD0 /* Proxy.swift */,
+			);
+			path = FiveOfPatterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
