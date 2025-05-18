@@ -31,10 +31,28 @@
 		7DBBDD202DCB520200E78CD0 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D9A47DF2DD9C0A700BD14C1 /* Exceptions for "Myself" folder in "Algorithms" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CreateNodes.swift,
+			);
+			target = 7D1DFABC2D811BB4001DC3E8 /* Algorithms */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D1DFABF2D811BB4001DC3E8 /* Algorithms */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		7D9A47DC2DD9BDB400BD14C1 /* Myself */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D9A47DF2DD9C0A700BD14C1 /* Exceptions for "Myself" folder in "Algorithms" target */,
+			);
+			path = Myself;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -71,6 +89,7 @@
 		7DBBDD182DCB505000E78CD0 /* Knowledge  */ = {
 			isa = PBXGroup;
 			children = (
+				7D9A47DC2DD9BDB400BD14C1 /* Myself */,
 				7DBBDD192DCB505A00E78CD0 /* ArchPatterns */,
 			);
 			path = "Knowledge ";
