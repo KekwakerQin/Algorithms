@@ -30,18 +30,29 @@ class LinkedList {
     }
     
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
-        guard var current = head else { return nil }
-        while var next = current.next {
-            if current.val == next.val {
-                while current.val == next.val {
-                    current.next = next.next
-                }
-            }
-            else {
+        let dummy = ListNode(0)
+        dummy.next = head
+        var prev: ListNode? = dummy
+        var current = head
+        
+        while current != nil {
+            var hasDuplicates = false
+            guard var next = current?.next else { return nil }
+            if next != nil && current?.val == next.val {
+                hasDuplicates = true
                 current = next
             }
+            
+            if hasDuplicates {
+                prev?.next = current?.next
+            } else {
+                prev = prev?.next
+            }
+            
+            current = current?.next
         }
-        return current
+        return dummy.next
+        
     }
     
     // Нам же надо проверить что у нас есть
