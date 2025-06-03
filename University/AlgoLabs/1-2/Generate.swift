@@ -7,6 +7,9 @@ enum Mode {
 
 final class GenerateTest { // final - для ускорения диспетчирезации, т.к у нас класс не будет переопределяться, а компилятор не будет тратить время на поиск
     
+    static var shared = GenerateTest()
+    
+    private init() {}
     func generateArray<T: Comparable>(sizeForGenerate: Int, for mode: Mode) -> [T] {
         var array = [T]()
         
