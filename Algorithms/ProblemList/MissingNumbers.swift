@@ -4,3 +4,4 @@ func missingNumber(_ num: [Int]) -> Int {
     
     return fromArray - countOfNumber
 }
+

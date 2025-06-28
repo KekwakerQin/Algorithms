@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7D9ED7ED2DB1FC1800A1618D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7D9ED7EC2DB1FC1800A1618D /* RxSwift */; };
+		7DE0C8E22E0FFF0B00F56E9D /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0C8E12E0FFEC800F56E9D /* BinaryTree.swift */; };
+		7DE0C8E42E0FFF8900F56E9D /* MemoryLeakingCheckerDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0C8E32E0FFF8000F56E9D /* MemoryLeakingCheckerDraft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,13 +31,18 @@
 		7DBBDD1E2DCB518B00E78CD0 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7DBBDD1F2DCB51C600E78CD0 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		7DBBDD202DCB520200E78CD0 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		7DE0C8E12E0FFEC800F56E9D /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		7DE0C8E32E0FFF8000F56E9D /* MemoryLeakingCheckerDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakingCheckerDraft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		7D9A47DF2DD9C0A700BD14C1 /* Exceptions for "Myself" folder in "Algorithms" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AboutClasses.swift,
+				AboutEnums.swift,
 				CreateNodes.swift,
+				extensionOfImplementedTypes.swift,
 			);
 			target = 7D1DFABC2D811BB4001DC3E8 /* Algorithms */;
 		};
@@ -60,6 +67,11 @@
 			path = University;
 			sourceTree = "<group>";
 		};
+		7DE0C8DE2E0CE43D00F56E9D /* Stack And Heap */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Stack And Heap";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		7D1DFAB42D811BB4001DC3E8 = {
 			isa = PBXGroup;
 			children = (
+				7DE0C8E02E0FFEC000F56E9D /* Drafts */,
 				7D9A47E02DDAC5EE00BD14C1 /* University */,
 				7DBBDD182DCB505000E78CD0 /* Knowledge  */,
 				7D1DFABF2D811BB4001DC3E8 /* Algorithms */,
@@ -95,6 +108,7 @@
 		7DBBDD182DCB505000E78CD0 /* Knowledge  */ = {
 			isa = PBXGroup;
 			children = (
+				7DE0C8DE2E0CE43D00F56E9D /* Stack And Heap */,
 				7D9A47DC2DD9BDB400BD14C1 /* Myself */,
 				7DBBDD192DCB505A00E78CD0 /* ArchPatterns */,
 			);
@@ -119,6 +133,15 @@
 				7DBBDD1B2DCB506E00E78CD0 /* Proxy.swift */,
 			);
 			path = FiveOfPatterns;
+			sourceTree = "<group>";
+		};
+		7DE0C8E02E0FFEC000F56E9D /* Drafts */ = {
+			isa = PBXGroup;
+			children = (
+				7DE0C8E32E0FFF8000F56E9D /* MemoryLeakingCheckerDraft.swift */,
+				7DE0C8E12E0FFEC800F56E9D /* BinaryTree.swift */,
+			);
+			path = Drafts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE0C8E42E0FFF8900F56E9D /* MemoryLeakingCheckerDraft.swift in Sources */,
+				7DE0C8E22E0FFF0B00F56E9D /* BinaryTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

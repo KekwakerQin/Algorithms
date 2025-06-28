@@ -1,5 +1,1 @@
-var testCase = GenerateTest()
-var sortCase = SortingForUnisLab()
-var newArray: [Int] = testCase.generateArray(sizeForGenerate: 50, for: .decrease)
-var insertionSort: [Int] = sortCase.runSortForLab(array: &newArray, for: .quickAndHeapSort)
-print(insertionSort)
+

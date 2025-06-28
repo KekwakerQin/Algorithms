@@ -1,7 +1,8 @@
-//
-//  Untitled.swift
-//  Algorithms
-//
-//  Created by Qin Chingis on 5/30/25.
-//
+protocol DoubleAbsoluteValueProtocol {
+    var absoluteValue: String { get }
+}
+
+extension Double: DoubleAbsoluteValueProtocol {
+    var absoluteValue: String { return "\(Int(self))"}
+}
 
